@@ -48,3 +48,13 @@ print(np.empty(10))
 print(np.zeros_like(a1))
 print(np.ones_like(a2))
 print(np.full_like(a3, 10))
+
+# arange() : 정수 범위로 배열 생성
+print(np.arange(0, 30, 2))
+
+# linspace() : 범위 내에서 균등 간격의 배열 생성
+# 0부터 1까지의 수를 5개로 나눠서
+print(np.linspace(0, 1, 5))
+
+# logspce() : 범위 내에서 균등간격으로 로그 스케일로 배열 생성
+print(np.logspace(0.1, 1, 20))
