@@ -33,4 +33,6 @@ print(np.ones((3,3)))
 
 print(np.full((3, 3), 1.23))
 
+# identity matrix
 print(np.eye(4))
+
