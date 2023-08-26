@@ -23,3 +23,14 @@ a3 = np.array([
     [[1, 2, 3], [4, 5, 6], [7, 8, 9]],
     [[1, 2, 3], [4, 5, 6], [7, 8, 9]],
 ])
+print(a3)
+print(a3.shape)
+
+print(np.zeros(10))
+print(np.ones(10))
+
+print(np.ones((3,3)))
+
+print(np.full((3, 3), 1.23))
+
+print(np.eye(4))
