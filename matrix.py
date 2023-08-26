@@ -36,3 +36,15 @@ print(np.full((3, 3), 1.23))
 # identity matrix
 print(np.eye(4))
 
+# 삼각행렬
+print(np.tri(3))
+
+# 초기화 x
+# 초기화가 없어서 배열 생성비용이 저렴하고 빠름
+# 초기화되지 않아서 기존 메모리에 존재하는 값이 들어감
+print(np.empty(10))
+
+# like
+print(np.zeros_like(a1))
+print(np.ones_like(a2))
+print(np.full_like(a3, 10))
