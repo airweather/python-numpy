@@ -58,3 +58,10 @@ print(np.linspace(0, 1, 5))
 
 # logspce() : 범위 내에서 균등간격으로 로그 스케일로 배열 생성
 print(np.logspace(0.1, 1, 20))
+
+# 실수값으로 랜덤 행렬 생선
+print(np.random.random((3, 3)))
+
+# 실수값으로 랜덤 행렬 생선
+print(np.random.randint(0, 10, (3, 3)))
+
