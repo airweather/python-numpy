@@ -65,3 +65,11 @@ print(np.random.random((3, 3)))
 # 실수값으로 랜덤 행렬 생선
 print(np.random.randint(0, 10, (3, 3)))
 
+# 정규분포
+print(np.random.normal(0, 1, (3, 3)))
+
+# 균등분포
+print(np.random.rand(3, 3))
+
+# 표준 정규 분포
+print(np.random.randn(3, 3))
