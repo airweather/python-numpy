@@ -26,13 +26,30 @@ def quadratic_function(x):
 
     return a * x ** 2 + b * x + c
 
-print(quadratic_function(2))
+# print(quadratic_function(2))
+
+# x = np.arange(-10, 10, 0.1)
+# y = quadratic_function(x)
+
+# plt.plot(x, y)
+# plt.xlabel('x')
+# plt.ylabel('y')
+# plt.title('Quadratic Function')
+# plt.show()
+
+def cubic_function(x):
+    a = 4
+    b = 0
+    c = -1
+    d = -8
+
+    return a * x ** 3 + b * x ** 2 + c * x + d
 
 x = np.arange(-10, 10, 0.1)
-y = quadratic_function(x)
+y = cubic_function(x)
 
 plt.plot(x, y)
 plt.xlabel('x')
 plt.ylabel('y')
-plt.title('Linear Function')
+plt.title('Quadratic Function')
 plt.show()
