@@ -8,10 +8,28 @@ def linear_function(x):
 
     return a * x + b
 
-print(linear_function(5))
+# print(linear_function(5))
 
 x = np.arange(-10, 10, 0.1)
 y = linear_function(x)
+
+# plt.plot(x, y)
+# plt.xlabel('x')
+# plt.ylabel('y')
+# plt.title('Linear Function')
+# plt.show()
+
+def quadratic_function(x):
+    a = 1
+    b = -1
+    c = -2
+
+    return a * x ** 2 + b * x + c
+
+print(quadratic_function(2))
+
+x = np.arange(-10, 10, 0.1)
+y = quadratic_function(x)
 
 plt.plot(x, y)
 plt.xlabel('x')
