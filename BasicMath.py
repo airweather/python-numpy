@@ -10,8 +10,8 @@ def linear_function(x):
 
 # print(linear_function(5))
 
-x = np.arange(-10, 10, 0.1)
-y = linear_function(x)
+# x = np.arange(-10, 10, 0.1)
+# y = linear_function(x)
 
 # plt.plot(x, y)
 # plt.xlabel('x')
@@ -45,11 +45,32 @@ def cubic_function(x):
 
     return a * x ** 3 + b * x ** 2 + c * x + d
 
+# x = np.arange(-10, 10, 0.1)
+# y = cubic_function(x)
+
+# plt.plot(x, y)
+# plt.xlabel('x')
+# plt.ylabel('y')
+# plt.title('Quadratic Function')
+# plt.show()
+
+def my_func(x):
+    a = 1
+    b = -3
+    c = 10
+
+    return a * x ** 2 + b * x + c
+
 x = np.arange(-10, 10, 0.1)
-y = cubic_function(x)
+y = my_func(x)
 
 plt.plot(x, y)
 plt.xlabel('x')
 plt.ylabel('y')
-plt.title('Quadratic Function')
+plt.scatter(1.5, my_func(1.5))
+plt.text(1.5-1.5, my_func(1.5)+10, 'min value of f(x)\n({}, {})'.format(1.5, my_func(1.5)), fontsize=10)
+plt.title('my_func')
 plt.show()
+
+min_val = min(y)
+print(min_val)
