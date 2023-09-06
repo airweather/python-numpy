@@ -61,16 +61,30 @@ def my_func(x):
 
     return a * x ** 2 + b * x + c
 
-x = np.arange(-10, 10, 0.1)
-y = my_func(x)
+# x = np.arange(-10, 10, 0.1)
+# y = my_func(x)
 
-plt.plot(x, y)
-plt.xlabel('x')
-plt.ylabel('y')
-plt.scatter(1.5, my_func(1.5))
-plt.text(1.5-1.5, my_func(1.5)+10, 'min value of f(x)\n({}, {})'.format(1.5, my_func(1.5)), fontsize=10)
-plt.title('my_func')
-plt.show()
+# plt.plot(x, y)
+# plt.xlabel('x')
+# plt.ylabel('y')
+# plt.scatter(1.5, my_func(1.5))
+# plt.text(1.5-1.5, my_func(1.5)+10, 'min value of f(x)\n({}, {})'.format(1.5, my_func(1.5)), fontsize=10)
+# plt.title('my_func')
+# plt.show()
 
-min_val = min(y)
-print(min_val)
+# min_val = min(y)
+# print(min_val)
+
+def get_minimum(x1, x2, f):
+    x = np.arange(x1, x2, 0.01)
+    y = f(x)
+
+    plt.plot(x, y)
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.title('get_minimum')
+    plt.show()
+
+    return min(y)
+
+print(get_minimum(1, 4, my_func))
