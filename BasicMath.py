@@ -87,4 +87,21 @@ def get_minimum(x1, x2, f):
 
     return min(y)
 
-print(get_minimum(1, 4, my_func))
+# print(get_minimum(1, 4, my_func))
+
+def exponential_function(x):
+    a = 4
+    return a ** x
+
+print(exponential_function(4))
+
+x = np.arange(-3, 2, 0.1)
+y = exponential_function(x)
+
+plt.plot(x, y)
+plt.xlabel('x')
+plt.ylabel('y')
+plt.ylim(-1, 15)
+plt.xlim(-4, 3)
+plt.title('exponential_function')
+plt.show()
