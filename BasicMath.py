@@ -115,3 +115,4 @@ print(exponential_function(0))
 
 print(math.exp(4))
 print(np.exp(4))
+
