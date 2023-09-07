@@ -112,3 +112,6 @@ def exponential_function(x):
 
 print(exponential_function(4))
 print(exponential_function(0))
+
+print(math.exp(4))
+print(np.exp(4))
