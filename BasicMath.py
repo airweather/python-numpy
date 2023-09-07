@@ -93,15 +93,22 @@ def exponential_function(x):
     a = 4
     return a ** x
 
+# print(exponential_function(4))
+
+# x = np.arange(-3, 2, 0.1)
+# y = exponential_function(x)
+
+# plt.plot(x, y)
+# plt.xlabel('x')
+# plt.ylabel('y')
+# plt.ylim(-1, 15)
+# plt.xlim(-4, 3)
+# plt.title('exponential_function')
+# plt.show()
+
+def exponential_function(x):
+    a = 4
+    return math.pow(a, x)
+
 print(exponential_function(4))
-
-x = np.arange(-3, 2, 0.1)
-y = exponential_function(x)
-
-plt.plot(x, y)
-plt.xlabel('x')
-plt.ylabel('y')
-plt.ylim(-1, 15)
-plt.xlim(-4, 3)
-plt.title('exponential_function')
-plt.show()
+print(exponential_function(0))
