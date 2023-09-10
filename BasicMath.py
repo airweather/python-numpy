@@ -120,7 +120,28 @@ def exponential_function(x):
 # print(math.log(2,3))
 
 # 상용로그
-print(np.log2(4))
+# print(np.log2(4))
 
 # base 가 e인 자연로그
-print(np.log(4))
+# print(np.log(4))
+
+# 역함수
+
+x = np.arange(-1, 5, 0.01)
+y1 = np.exp(x)
+
+x2 = np.arange(0.000001, 5, 0.01)
+y2 = np.log(x2)
+
+y3 = x
+
+plt.plot(x, y1, 'r-', x2, y2, 'b-', x, y3, 'k--')
+
+plt.ylim(-2, 6)
+plt.axvline(x=0, color='k')
+plt.axhline(y=0, color='k')
+
+plt.xlabel('x')
+plt.ylabel('y')
+
+plt.show()
