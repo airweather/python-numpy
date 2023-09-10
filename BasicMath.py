@@ -110,9 +110,17 @@ def exponential_function(x):
     a = 4
     return math.pow(a, x)
 
-print(exponential_function(4))
-print(exponential_function(0))
+# print(exponential_function(4))
+# print(exponential_function(0))
 
-print(math.exp(4))
-print(np.exp(4))
+# print(math.exp(4))
+# print(np.exp(4))
 
+# value, base
+# print(math.log(2,3))
+
+# 상용로그
+print(np.log2(4))
+
+# base 가 e인 자연로그
+print(np.log(4))
