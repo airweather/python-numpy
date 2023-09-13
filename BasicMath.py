@@ -146,21 +146,22 @@ def exponential_function(x):
 
 # plt.show()
 
-x = np.arange(-10, 10, 0.01)
-y1 = -np.log(x)
-y2 = -np.log(1-x)
+# x = np.arange(-10, 10, 0.01)
+# y1 = -np.log(x)
+# y2 = -np.log(1-x)
 
-plt.axvline(x=0, color='k')
-plt.axhline(y=0, color='k')
+# plt.axvline(x=0, color='k')
+# plt.axhline(y=0, color='k')
 
-plt.grid()
-plt.plot(x, y1, 'b-', x, y2, 'r-')
-plt.text(0.9, 2.0, 'y1 = -ln(x)', fontsize=10)
-plt.text(0.1, 3, 'y1 = -ln(x)', fontsize=10)
-plt.xlim(-0.3, 1.4)
-plt.ylim(-0.5, 4)
-plt.scatter(0.5, -np.log(0.5))
-plt.show()
+# plt.grid()
+# plt.plot(x, y1, 'b-', x, y2, 'r-')
+# plt.text(0.9, 2.0, 'y1 = -ln(x)', fontsize=10)
+# plt.text(0.1, 3, 'y1 = -ln(x)', fontsize=10)
+# plt.xlim(-0.3, 1.4)
+# plt.ylim(-0.5, 4)
+# plt.scatter(0.5, -np.log(0.5))
+# plt.show()
+
 
 
 
